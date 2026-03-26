@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朱子昕 | 人工智能大三学生</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #fafafa;
+            color: #5a5a5a;
+            line-height: 1.7;
+        }
+
+        /* 导航栏 - 极简 */
+        .nav {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #8b8b8b;
+            letter-spacing: 1px;
+        }
+
+        .nav a {
+            color: #8b8b8b;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav a:hover {
+            color: #a8c0b5;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        /* 头部简介 */
+        .intro {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .intro h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #7a7a7a;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+        }
+
+        .intro .sub {
+            font-size: 0.9rem;
+            color: #9e9e9e;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 0.95rem;
+            max-width: 500px;
+            margin: 1rem auto 0;
+            color: #8a8a8a;
+        }
+
+        /* 区块 */
+        .section {
+            margin: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #7a7a7a;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            border-left: 3px solid #cbdcd5;
+            padding-left: 1rem;
+        }
+
+        /* 技能标签 - 清淡 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .skill {
+            background: #f0f0f0;
+            color: #7a7a7a;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* 项目卡片 - 极简 */
+        .project-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .project-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #7e7e7e;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-item p {
+            font-size: 0.9rem;
+            color: #8f8f8f;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .project-tags span {
+            font-size: 0.75rem;
+            color: #9b9b9b;
+            background: #f5f5f5;
+            padding: 0.2rem 0.7rem;
+            border-radius: 12px;
+        }
+
+        /* 联系区 */
+        .contact {
+            margin-top: 2.5rem;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .contact a {
+            color: #8fa89d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted #cfcfcf;
+        }
+
+        .contact a:hover {
+            color: #b3cfc2;
+        }
+
+        .contact p {
+            margin: 0.5rem 0;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.75rem;
+            color: #bbbbbb;
+            border-top: 1px solid #efefef;
+        }
+
+        @media (max-width: 650px) {
+            .nav {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.2rem;
+            }
+            .nav a {
+                margin: 0;
+            }
+            .intro h1 {
+                font-size: 1.6rem;
+            }
+            .container {
+                padding: 1rem 1.5rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="logo">ZHU ZIXIN</div>
+        <div class="nav-right">
+            <a href="#home">主页</a>
+            <a href="#skills">技能</a>
+            <a href="#project">项目</a>
+            <a href="#contact">联系</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="home" class="intro">
+            <h1>朱子昕</h1>
+            <div class="sub">人工智能 · 大三学生</div>
+            <p>会一点 C / C++ 和 Python | 了解机器学习和深度学习<br>小白一只，持续成长中 ✨</p>
+        </div>
+
+        <div id="skills" class="section">
+            <div class="section-title">技能</div>
+            <div class="skills">
+                <span class="skill">Python</span>
+                <span class="skill">C / C++</span>
+                <span class="skill">机器学习基础</span>
+                <span class="skill">深度学习基础</span>
+                <span class="skill">PyTorch / TensorFlow</span>
+            </div>
+        </div>
+
+        <div id="project" class="section">
+            <div class="section-title">项目</div>
+            <div class="project-item">
+                <h3>美术作品评价系统</h3>
+                <p>基于深度学习的图像分析项目，对美术作品进行风格分类和基础质量评估。</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>CNN</span>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>更多作品 · 筹备中</h3>
+                <p>正在学习新的技术，后续会更新更多有趣的项目。</p>
+                <div class="project-tags">
+                    <span>持续学习</span>
+                    <span>coming soon</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <p>📬 联系我</p>
+            <a href="mailto:2748820910@qq.com">2748820910@qq.com</a>
+            <p style="margin-top: 1rem; font-size: 0.8rem; color: #aaa;">✨ 欢迎交流学习 ✨</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 朱子昕 · 保持好奇，持续成长</p>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const id = this.getAttribute('href').substring(1);
+                const target = document.getElementById(id);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                } else if (id === 'home') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
